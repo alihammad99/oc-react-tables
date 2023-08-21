@@ -1,7 +1,4 @@
-export const searchByValue = (searchValue, setData) => {
-  const mockData = localStorage.getItem("employees");
-  const data = JSON.parse(mockData);
-
+export const searchByValue = (searchValue, data, setData) => {
   const searchResults = [];
 
   const searchInObject = (obj, currentPath) => {

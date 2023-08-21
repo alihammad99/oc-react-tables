@@ -13,7 +13,7 @@ const CurrentEmployees = ({ data }) => {
 
   useEffect(() => {
     if (searchValue.length > 1) {
-      searchByValue(searchValue, setShowData);
+      searchByValue(searchValue, showData, setShowData);
     } else {
       setShowData(data);
     }
